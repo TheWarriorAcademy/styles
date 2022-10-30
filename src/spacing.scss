@@ -1,0 +1,13 @@
+@import 'abstract/spacing';
+
+@each $side in $sides {
+  @each $size-prefix, $size-value in $sizes {
+    .twa-p#{$side}-#{$size-prefix} {
+      @include apply-padding($size-prefix, $side);
+    }
+
+    .twa-m#{$side}-#{$size-prefix} {
+      @include apply-margin($size-prefix, $side);
+    }
+  }
+}

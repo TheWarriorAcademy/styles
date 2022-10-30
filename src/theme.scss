@@ -1,0 +1,49 @@
+@import "abstract/colors";
+
+/// Add this class on the `html` tag to activate color scheme for the dark theme.
+.twa-theme-dark {
+  --twa-color-primary: #{$twa-color-primary};
+  --twa-color-secondary: #{$twa-color-secondary};
+  --twa-color-accent-primary: #{$twa-color-accent-primary};
+  --twa-color-accent-secondary: #{$twa-color-accent-secondary};
+}
+
+/// Add this class to any component to add primary color to its background.
+.twa-bg-primary {
+  background-color: var(--twa-color-primary);
+}
+
+/// Add this class to any component to add secondary color to its background.
+.twa-bg-secondary {
+  background-color: var(--twa-color-secondary);
+}
+
+/// Add this class to any component to add accent primary color to its background.
+.twa-bg-accent-primary {
+  background-color: var(--twa-color-accent-primary);
+}
+
+/// Add this class to any component to add accent secondary color to its background.
+.twa-bg-secondary-primary {
+  background-color: var(--twa-color-accent-secondary);
+}
+
+/// Add this class to any component to add primary color to its text color.
+.twa-text-primary {
+  color: var(--twa-color-primary);
+}
+
+/// Add this class to any component to add secondary color to its text color.
+.twa-text-secondary {
+  color: var(--twa-color-secondary);
+}
+
+/// Add this class to any component to add accent primary color to its text color.
+.twa-text-accent-primary {
+  color: var(--twa-color-accent-primary);
+}
+
+/// Add this class to any component to add accent secondary color to its text color.
+.twa-text-accent-secondary {
+  color: var(--twa-color-accent-secondary);
+}

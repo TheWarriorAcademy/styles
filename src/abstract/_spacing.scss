@@ -1,0 +1,57 @@
+@use 'sass:map';
+
+$sides: 'x', 'y', 't', 'r', 'b', 'l';
+$sizes: (
+  'small': 0.5rem,
+  'normal': 1rem,
+  'big': 1.5rem,
+  'huge': 2rem
+);
+
+@mixin apply-padding($size-prefix, $side: '') {
+  $size: map.get($sizes, $size-prefix);
+
+  @if $side == '' {
+    padding: #{$size};
+  } @else if $side == 'x' {
+    padding-left: #{$size};
+    padding-right: #{$size};
+  } @else if $side == 'y' {
+    padding-top: #{$size};
+    padding-bottom: #{$size};
+  } @else if $side == 't' {
+    padding-top: #{$size};
+  } @else if $side == 'r' {
+    padding-right: #{$size};
+  } @else if $side == 'b' {
+    padding-bottom: #{$size};
+  } @else if $side == 'l' {
+    padding-left: #{$size};
+  } @else {
+    @error 'Unknown side provided: #{$side}';
+  }
+}
+
+@mixin apply-margin($size-prefix, $side: '') {
+  $size: map.get($sizes, $size-prefix);
+
+  @if $side == '' {
+    margin: #{$size};
+  } @else if $side == 'x' {
+    margin-left: #{$size};
+    margin-right: #{$size};
+  } @else if $side == 'y' {
+    margin-top: #{$size};
+    margin-bottom: #{$size};
+  } @else if $side == 't' {
+    margin-top: #{$size};
+  } @else if $side == 'r' {
+    margin-right: #{$size};
+  } @else if $side == 'b' {
+    margin-bottom: #{$size};
+  } @else if $side == 'l' {
+    margin-left: #{$size};
+  } @else {
+    @error 'Unknown side provided: #{$side}';
+  }
+}
