@@ -6,44 +6,49 @@
   --twa-color-secondary: #{$twa-color-secondary};
   --twa-color-accent-primary: #{$twa-color-accent-primary};
   --twa-color-accent-secondary: #{$twa-color-accent-secondary};
+
+  --twa-color-primary_rgb: #{$twa-color-primary_rgb};
+  --twa-color-secondary_rgb: #{$twa-color-secondary_rgb};
+  --twa-color-accent-primary_rgb: #{$twa-color-accent-primary_rgb};
+  --twa-color-accent-secondary_rgb: #{$twa-color-accent-secondary_rgb};
 }
 
 /// Add this class to any component to add primary color to its background.
 .twa-bg-primary {
-  background-color: var(--twa-color-primary);
+  @include twa-background-color('primary');
 }
 
 /// Add this class to any component to add secondary color to its background.
 .twa-bg-secondary {
-  background-color: var(--twa-color-secondary);
+  @include twa-background-color('secondary');
 }
 
 /// Add this class to any component to add accent primary color to its background.
 .twa-bg-accent-primary {
-  background-color: var(--twa-color-accent-primary);
+  @include twa-background-color('accent-primary');
 }
 
 /// Add this class to any component to add accent secondary color to its background.
 .twa-bg-secondary-primary {
-  background-color: var(--twa-color-accent-secondary);
+  @include twa-background-color('accent-secondary');
 }
 
 /// Add this class to any component to add primary color to its text color.
 .twa-text-primary {
-  color: var(--twa-color-primary);
+  @include twa-text-color('primary');
 }
 
 /// Add this class to any component to add secondary color to its text color.
 .twa-text-secondary {
-  color: var(--twa-color-secondary);
+  @include twa-text-color('secondary');
 }
 
 /// Add this class to any component to add accent primary color to its text color.
 .twa-text-accent-primary {
-  color: var(--twa-color-accent-primary);
+  @include twa-text-color('accent-primary');
 }
 
 /// Add this class to any component to add accent secondary color to its text color.
 .twa-text-accent-secondary {
-  color: var(--twa-color-accent-secondary);
+  @include twa-text-color('accent-secondary');
 }
