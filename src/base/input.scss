@@ -1,0 +1,25 @@
+@import "../abstract/colors";
+@import "../abstract/spacing";
+
+label {
+  font-size: 1rem;
+  font-family: var(--twa-font-secondary);
+
+  &.twa-required-field:after {
+    content: ' *';
+    display: inline;
+    @include twa-text-color('accent-secondary');
+  }
+}
+
+input {
+  @include twa-text-color('primary');
+  @include apply-padding('normal', 'x');
+  @include apply-padding('small', 'y');
+  background: rgba(var(--twa-color-accent-secondary_rgb), 0.65);
+  outline: none;
+}
+
+input:required {
+  background: rgba(var(--twa-color-accent-primary_rgb), 0.65);
+}
