@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:styles": "node scripts/compile.js",
+    "build:preview": "npm run build:styles && node scripts/preview.js",
+    "start:preview": "npm run build:preview && http-server ./preview --port 3030",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "sass": "^1.55.0"
   }
 }
