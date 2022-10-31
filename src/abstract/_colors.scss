@@ -1,4 +1,38 @@
+@use 'sass:map';
+
 $twa-color-accent-primary: #ff9029;
 $twa-color-accent-secondary: #008255;
 $twa-color-primary: #fff;
 $twa-color-secondary: #000;
+
+$twa-color-accent-primary_rgb: #{red($twa-color-accent-primary)}, #{green($twa-color-accent-primary)}, #{blue($twa-color-accent-primary)};
+$twa-color-accent-secondary_rgb: #{red($twa-color-accent-secondary)}, #{green($twa-color-accent-secondary)}, #{blue($twa-color-accent-secondary)};
+$twa-color-primary_rgb: #{red($twa-color-primary)}, #{green($twa-color-primary)}, #{blue($twa-color-primary)};
+$twa-color-secondary_rgb: #{red($twa-color-secondary)}, #{green($twa-color-secondary)}, #{blue($twa-color-secondary)};
+
+$color-variation-map: (
+  'accent-primary': $twa-color-accent-primary,
+  'accent-secondary': $twa-color-accent-secondary,
+  'primary': $twa-color-primary,
+  'secondary': $twa-color-secondary
+);
+
+@mixin twa-background-color($variation) {
+  $color: map.get($color-variation-map, $variation);
+
+  @if $color == null {
+    @error '#{$variation} does not exist!';
+  }
+
+  background-color: var(--twa-color-#{$variation});
+}
+
+@mixin twa-text-color($variation) {
+  $color: map.get($color-variation-map, $variation);
+
+  @if $color == null {
+    @error '#{$variation} does not exist!';
+  }
+
+  color: var(--twa-color-#{$variation});
+}
