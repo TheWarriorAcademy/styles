@@ -1,0 +1,14 @@
+@import "../abstract/animation";
+
+a {
+  color: var(--twa-color-accent-primary);
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+  transition: color #{$transition-duration-default} #{$primary-transition-function};
+}
+
+a:hover,
+a:visited {
+  color: var(--twa-color-accent-secondary);
+}
