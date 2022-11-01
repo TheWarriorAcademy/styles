@@ -23,10 +23,10 @@ button.twa-loading {
 
 .twa-button-secondary {
   background-color: var(--twa-color-accent-secondary);
-  color: var(--twa-color-secondary);
+  color: var(--twa-color-primary);
 
   &.twa-loading {
-    @include twa-text-color('secondary');
+    @include twa-text-color('primary');
     background: var(--loading-background-svg) var(--twa-color-accent-secondary);
   }
 }
