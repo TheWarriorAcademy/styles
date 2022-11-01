@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <title>The Warrior Academy - Styles</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+
+    <style>
+        .color-sample {
+            display: inline-block;
+            text-align: center;
+            width: 6rem;
+            margin: 0.5rem;
+            vertical-align: top;
+        }
+
+        .color-sample-box {
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .color-sample-label {
+            font-family: var(--twa-font-secondary);
+            font-weight: bold;
+            line-height: 1.25;
+        }
+    </style>
 </head>
 <body>
+
+    <figure class="color-sample">
+        <div class="color-sample-box" style="background-color: var(--twa-color-primary)"></div>
+        <figcaption class="color-sample-label">Primary</figcaption>
+    </figure>
+
+    <figure class="color-sample">
+        <div class="color-sample-box" style="background-color: var(--twa-color-secondary); border: 1px solid var(--twa-color-primary);"></div>
+        <figcaption class="color-sample-label">Secondary</figcaption>
+    </figure>
+
+    <figure class="color-sample">
+        <div class="color-sample-box" style="background-color: var(--twa-color-accent-primary)"></div>
+        <figcaption class="color-sample-label">Accent Primary</figcaption>
+    </figure>
+
+    <figure class="color-sample">
+        <div class="color-sample-box" style="background-color: var(--twa-color-accent-secondary)"></div>
+        <figcaption class="color-sample-label">Accent Secondary</figcaption>
+    </figure>
+
     <h1>Heading Type 1</h1>
     <h2>Heading Type 2</h2>
     <h3>Heading Type 3</h3>
