@@ -1,0 +1,13 @@
+@import "../abstract/fonts";
+
+@each $variation, $value in $variations {
+  .twa-font-#{$variation} {
+    @include twa-font($variation);
+  }
+}
+
+@each $size-name, $size in $font-sizes {
+  .twa-font-size-#{$size-name} {
+    font-size: #{$size};
+  }
+}

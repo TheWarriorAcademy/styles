@@ -1,32 +1,34 @@
+@import '../abstract/fonts';
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
+  @include twa-font('secondary');
 }
 
 h1 {
-  font-size: 2rem;
+  @include twa-font-size('ginormous');
 }
 
 h2 {
-  font-size: 1.5rem;
+  @include twa-font-size('huge');
 }
 
 h3 {
-  font-size: 1.25rem;
+  @include twa-font-size('big');
 }
 
 h4 {
-  font-size: 1rem;
+  @include twa-font-size('normal');
 }
 
 h5 {
-  font-size: 0.9rem;
+  @include twa-font-size('small');
 }
 
 h6 {
-  font-size: 0.75rem;
+  @include twa-font-size('xsmall');
 }

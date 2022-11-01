@@ -1,4 +1,6 @@
-@import "base/index";
-@import "theme";
+@import "base";
 @import "components";
-@import "spacing";
+
+@import "utilities/theme";
+@import "utilities/spacing";
+@import "utilities/fonts";

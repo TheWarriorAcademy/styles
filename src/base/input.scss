@@ -3,6 +3,7 @@
 
 label {
   font-size: 1rem;
+  font-weight: bold;
   font-family: var(--twa-font-secondary);
 
   &.twa-required-field:after {
@@ -14,12 +15,11 @@ label {
 
 input {
   @include twa-text-color('primary');
-  @include apply-padding('normal', 'x');
-  @include apply-padding('small', 'y');
-  background: rgba(var(--twa-color-accent-secondary_rgb), 0.65);
+  @include apply-padding('small');
+  background: rgba(var(--twa-color-primary_rgb), 0.5);
   outline: none;
 }
 
-input:required {
+/*input:required {
   background: rgba(var(--twa-color-accent-primary_rgb), 0.65);
-}
+}*/

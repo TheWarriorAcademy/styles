@@ -1,0 +1,32 @@
+@use 'sass:map';
+
+$variations: (
+  'primary': var(--twa-font-primary),
+  'secondary': var(--twa-font-secondary),
+  'monospace': var(--twa-font-monospace)
+);
+
+$font-sizes: (
+  'xsmall': 0.75rem,
+  'small': 0.9rem,
+  'normal': 1rem,
+  'big': 1.25rem,
+  'huge': 1.5rem,
+  'ginormous': 2rem
+);
+
+@mixin twa-font($variation) {
+  @if map.get($variations, $variation) == null {
+    @error 'The font variation #{$variation} does not exist';
+  }
+
+  font-family: #{map.get($variations, $variation)};
+}
+
+@mixin twa-font-size($size) {
+  @if map.get($font-sizes, $size) == null {
+    @error 'Unknown font size for #{$size}';
+  }
+
+  font-size: #{map.get($font-sizes, $size)};
+}

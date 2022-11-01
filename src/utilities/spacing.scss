@@ -1,4 +1,4 @@
-@import 'abstract/spacing';
+@import '../abstract/spacing';
 
 @each $side in $sides {
   @each $size-prefix, $size-value in $sizes {
