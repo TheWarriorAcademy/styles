@@ -1,0 +1,26 @@
+@import '../abstract/colors';
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-family: var(--twa-font-secondary);
+  font-weight: bold;
+  border-bottom: 1rem solid rgba(var(--twa-color-accent-secondary_rgb), .5);
+
+}
+
+th,
+td {
+  border-collapse: collapse;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+tr:nth-child(odd) td {
+  background-color: rgba(var(--twa-color-accent-primary_rgb),.25);
+}

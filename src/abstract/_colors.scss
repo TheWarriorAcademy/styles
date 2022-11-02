@@ -4,17 +4,23 @@ $twa-color-accent-primary: #ff9029;
 $twa-color-accent-secondary: #008255;
 $twa-color-primary: #fff;
 $twa-color-secondary: #000;
+$twa-color-error: #e61717;
+$twa-color-success: #008255;
 
 $twa-color-accent-primary_rgb: #{red($twa-color-accent-primary)}, #{green($twa-color-accent-primary)}, #{blue($twa-color-accent-primary)};
 $twa-color-accent-secondary_rgb: #{red($twa-color-accent-secondary)}, #{green($twa-color-accent-secondary)}, #{blue($twa-color-accent-secondary)};
 $twa-color-primary_rgb: #{red($twa-color-primary)}, #{green($twa-color-primary)}, #{blue($twa-color-primary)};
 $twa-color-secondary_rgb: #{red($twa-color-secondary)}, #{green($twa-color-secondary)}, #{blue($twa-color-secondary)};
+$twa-color-error_rgb: #{red($twa-color-error)}, #{green($twa-color-error)}, #{blue($twa-color-error)};
+$twa-color-success_rgb: #{red($twa-color-success)}, #{green($twa-color-success)}, #{blue($twa-color-success)};
 
 $color-variation-map: (
   'accent-primary': $twa-color-accent-primary,
   'accent-secondary': $twa-color-accent-secondary,
   'primary': $twa-color-primary,
-  'secondary': $twa-color-secondary
+  'secondary': $twa-color-secondary,
+  'success': $twa-color-success,
+  'error': $twa-color-error,
 );
 
 @mixin twa-background-color($variation) {

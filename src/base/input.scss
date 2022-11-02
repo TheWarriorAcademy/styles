@@ -16,10 +16,6 @@ label {
 input {
   @include twa-text-color('primary');
   @include apply-padding('small');
-  background: rgba(var(--twa-color-primary_rgb), 0.5);
+  background: rgba(var(--twa-color-primary_rgb), 0.4);
   outline: none;
 }
-
-/*input:required {
-  background: rgba(var(--twa-color-accent-primary_rgb), 0.65);
-}*/
