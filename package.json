@@ -1,6 +1,6 @@
 {
   "name": "@thewarrioracademy/styles",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The design system for The Warrior Academy projects",
   "homepage": "https://github.com/TheWarriorAcademy/styles",
   "main": "twa.css",

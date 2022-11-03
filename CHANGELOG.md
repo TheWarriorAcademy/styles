@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2022-11-03
+
 ### Added
 - CSS variable definitions and utility classes for colors.
 - Dark theme class that activates a certain color palette.
@@ -16,4 +18,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CSS classes for navigation links.
 - CSS classes for representing different variations and states of buttons.
 
-[Unreleased]: https://github.com/TheWarriorAcademy/styles/tree/master
+[Unreleased]: https://github.com/TheWarriorAcademy/styles/compare/0.1.0...HEAD
+[0.1.0]: https://github.com/TheWarriorAcademy/styles/releases/tag/0.1.0
