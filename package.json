@@ -1,8 +1,9 @@
 {
-  "name": "twa-styles",
+  "name": "@thewarrioracademy/styles",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The design system for The Warrior Academy projects",
+  "homepage": "https://github.com/TheWarriorAcademy/styles",
+  "main": "twa.css",
   "scripts": {
     "build:styles": "node scripts/compile.js",
     "build:preview": "npm run build:styles && node scripts/preview.js",
@@ -11,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bora Semiz <bora@thewarrioracademy.net>",
   "license": "ISC",
   "devDependencies": {
     "csso": "^5.0.5",
