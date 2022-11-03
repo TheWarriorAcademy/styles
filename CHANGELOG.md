@@ -16,4 +16,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CSS classes for navigation links.
 - CSS classes for representing different variations and states of buttons.
 
-[Unreleased]: https://github.com/TheWarriorAcademy/TWA-Styles/releases/tag/0.1.0
+[Unreleased]: https://github.com/TheWarriorAcademy/styles/tree/master
